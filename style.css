@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+  
+}
+
+a {
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #fccd4d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 4em;
+}
+header:after {
+  content: "";
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .3;
+  z-index: 10;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2em;
+  color: #fff;
+  z-index: 11;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  z-index: 11;
+}
+
+.title .big-title {
+  font-family: 'Berkshire Swash', cursive;
+  display: block;
+  background: #fceabb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.btn {
+  background: #ffd65e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+}
+
+.btn {
+  border-radius: 15px;
+  padding: 30px;
+  display: inline-block;
+  margin: 0 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+
+}
+
+.btn:hover {
+  color: #000;
+}
+.btn-muted {
+  background: #ffd65e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffd65e 0%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+
+}
+
+.btn-play {
+  display: block;
+  margin: 50px auto;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0;
+  background: #fceabb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-play:hover {
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px;
+}
+
+.btn.btn-play svg {
+  width: 50%;
+  transform: translateX(10%);
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  fill: #fff;
+}
+
+.contact {
+  text-align: center;
+  color: #fff;
+  z-index: 11;
+  font-size: 1.5em;
+}
+
+footer {
+  height: 30px;
+  background-color: #000;
+  z-index: 11;
+  padding: 15px 0;
+}
+footer .copy {
+  color: #fff;
+  display: inline;
+  z-index: 11;
+    
+}
+.social {
+  display: block;
+  position: fixed;
+  z-index: 11;
+  text-align: right;
+  float: right;
+  right: 5%;
+  top: 5%;
+}
+.social svg {
+  width: 50px;
+  margin-right: 15px;
+  fill: #fff;
+  transition: fill 0.5s ease-in-out;
+}
+
+.social svg:hover {
+  fill:#fccd4d;
+  cursor: pointer;
+}
